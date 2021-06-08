@@ -3,6 +3,8 @@ import java.io.*;
 import java.util.HashMap;
 
 public class Main {
+    static FileWriter fw;
+
     static HashMap<String, String> opCode = new HashMap<>() {{
         put("add",  "0");
         put("addi", "1");
@@ -37,7 +39,13 @@ public class Main {
     static HashMap<String, String> labels = new HashMap<>();
 
     public static void main(String[] args) {
+        fw = makeFile();
         read();
+        try {
+            fw.close();
+        } catch (IOException e) {
+            System.out.println("Failed to make the output file.");
+        }
     }
 
     public static void read() {
@@ -105,6 +113,27 @@ public class Main {
         return null;
     }
 
+    private static FileWriter makeFile() {
+        try {
+            File file = new File("output.hex");
+            if (file.exists())
+                file.delete();
+            file.createNewFile();
+            return new FileWriter(file);
+        } catch (IOException e) {
+            System.out.println("Failed to make the output file.");
+        }
+        return null;
+    }
+
+    private static void write(String hex) {
+        try {
+            fw.write(hex + "\n");
+        } catch (IOException e) {
+            System.out.println("Failed to make the output file");
+        }
+    }
+
     private static void read(File file) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -122,7 +151,7 @@ public class Main {
                 System.out.println(row);
                 if (!row.endsWith(":")) {
                     String[] params = row.replaceAll(",", "").split("[ \t]+");
-                    System.out.println(toHex(params));
+                    write(toHex(params));
                 }
             }
         } catch (IOException e) {
