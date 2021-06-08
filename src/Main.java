@@ -4,37 +4,37 @@ import java.util.HashMap;
 
 public class Main {
     static HashMap<String, String> opCode = new HashMap<>() {{
-        put("add",  "0000");
-        put("addi", "0001");
-        put("load", "0010");
-        put("save", "0011");
-        put("beq",  "0100");
-        put("jmp",  "0101");
-        put("and",  "0110");
-        put("or" ,  "0111");
-        put("not",  "1000");
+        put("add",  "0");
+        put("addi", "1");
+        put("lw", "2");
+        put("sw", "3");
+        put("beq",  "4");
+        put("jmp",  "5");
+        put("and",  "6");
+        put("or" ,  "7");
+        put("nor",  "8");
     }};
 
     static HashMap<String, String> registers  = new HashMap<>() {{
-        put("a", "0000");
-        put("b", "0001");
-        put("c", "0010");
-        put("d", "0011");
-        put("e", "0100");
-        put("f", "0101");
-        put("g", "0110");
-        put("h", "0111");
-        put("i", "1000");
-        put("j", "1001");
-        put("k", "1010");
-        put("l", "1011");
-        put("m", "1100");
-        put("n", "1101");
-        put("o", "1110");
-        put("p", "1111");
+        put("$t0", "0");
+        put("$t1", "1");
+        put("$t2", "2");
+        put("$t3", "3");
+        put("$t4", "4");
+        put("$t5", "5");
+        put("$t6", "6");
+        put("$t7", "7");
+        put("$t8", "8");
+        put("$t9", "9");
+        put("$t10", "a");
+        put("$t11", "b");
+        put("$t12", "c");
+        put("$t13", "d");
+        put("$t14", "e");
+        put("$t15", "f");
     }};
 
-    static HashMap<String, Integer> labels = new HashMap<>();
+    static HashMap<String, String> labels = new HashMap<>();
 
     public static void main(String[] args) {
         read();
@@ -56,11 +56,54 @@ public class Main {
 
     }
 
-//    private static String toHex(String[] params) {
-//        switch (params[0]) {
-//            case
-//        }
-//    }
+    private static String getIm(String number, int bytes) {
+        int n = Integer.parseInt(number);
+        if (n >= (Math.pow(256, bytes)))
+            throw new IllegalStateException("Immediate numbers should be smaller than " + (Math.pow(256, bytes)) + ".");
+
+        StringBuilder ans = new StringBuilder(Integer.toHexString(n) + "");
+        while (ans.length() < bytes) {
+            ans.insert(0, "0");
+        }
+
+        return ans.toString();
+    }
+
+    private static String toHex(String[] params) {
+        try {
+            switch (params[0]) {
+                case "add":
+                    return opCode.get("add") + registers.get(params[1]) + registers.get(params[2])
+                            + registers.get(params[3]) + "FFFF";
+                case "addi":
+                    return opCode.get("addi") + registers.get(params[1]) + getIm(params[2], 3) + "FFF";
+                case "and":
+                    return opCode.get("and") + registers.get(params[1]) + registers.get(params[2])
+                            + registers.get(params[3]) + "FFFF";
+                case "or":
+                    return opCode.get("or") + registers.get(params[1]) + registers.get(params[2])
+                            + registers.get(params[3]) + "FFFF";
+                case "nor":
+                    return opCode.get("nor") + registers.get(params[1]) + registers.get(params[2])
+                            + registers.get(params[3]) + "FFFF";
+                case "jmp":
+                    if (labels.containsKey(params[1]))
+                        return opCode.get("jmp") + labels.get(params[1]) + "FFFFF";
+                    else
+                        return opCode.get("jmp") + getIm(params[1], 2) + "FFFFF";
+                case "beq":
+                    return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) +
+                            getIm(params[3], 2) + "FFF";
+                case "sw":
+                    return opCode.get("sw") + registers.get(params[1]) + registers.get(params[2]) + "FFFFF";
+                case "lw":
+                    return opCode.get("lw") + registers.get(params[1]) + registers.get(params[2]) + "FFFFF";
+            }
+        } catch (Exception e) {
+            System.out.println("Code is not valid.");
+        }
+        return null;
+    }
 
     private static void read(File file) {
         try {
@@ -76,12 +119,11 @@ public class Main {
                 if(row.length() == 0)
                     continue;
 
+                System.out.println(row);
                 if (!row.endsWith(":")) {
                     String[] params = row.replaceAll(",", "").split("[ \t]+");
-                    for (String a : params)
-                        System.out.println(a);
+                    System.out.println(toHex(params));
                 }
-                System.out.println(row);
             }
         } catch (IOException e) {
             showDialog("File is damaged.");
@@ -102,9 +144,11 @@ public class Main {
                     row = row.substring(0, Math.max(row.indexOf("#") - 1, 0));
 
                 if (row.endsWith(":")) {
-                    labels.put(row.substring(0, row.length() - 1), lineCount);
+                    labels.put(row.substring(0, row.length() - 1), getIm(lineCount + "", 2));
                 }
-                lineCount++;
+                else {
+                    lineCount++;
+                }
             }
         } catch (IOException e) {
             showDialog("File is damaged.");
