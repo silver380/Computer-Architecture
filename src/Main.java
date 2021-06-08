@@ -34,7 +34,7 @@ public class Main {
         put("p", "1111");
     }};
 
-    static HashMap<String, Integer> labels;
+    static HashMap<String, Integer> labels = new HashMap<>();
 
     public static void main(String[] args) {
         read();
@@ -58,7 +58,7 @@ public class Main {
 
 //    private static String toHex(String[] params) {
 //        switch (params[0]) {
-//
+//            case
 //        }
 //    }
 
@@ -70,8 +70,11 @@ public class Main {
                 row = reader.readLine();
                 if (row == null)
                     break;
+                row = row.trim().toLowerCase();
                 if(row.contains("#"))
-                    row = row.substring(0, row.indexOf("#") - 1);
+                    row = row.substring(0, Math.max(row.indexOf("#") - 1, 0));
+                if(row.length() == 0)
+                    continue;
 
                 if (!row.endsWith(":")) {
                     String[] params = row.replaceAll(",", "").split("[ \t]+");
@@ -94,14 +97,14 @@ public class Main {
                 row = reader.readLine();
                 if (row == null)
                     break;
+                row = row.trim().toLowerCase();
                 if(row.contains("#"))
-                    row = row.substring(0, row.indexOf("#") - 1);
+                    row = row.substring(0, Math.max(row.indexOf("#") - 1, 0));
 
                 if (row.endsWith(":")) {
                     labels.put(row.substring(0, row.length() - 1), lineCount);
                 }
                 lineCount++;
-                System.out.println(row);
             }
         } catch (IOException e) {
             showDialog("File is damaged.");
