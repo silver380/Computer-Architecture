@@ -7,14 +7,15 @@ public class Main {
 
     static HashMap<String, String> opCode = new HashMap<>() {{
         put("add",  "0");
-        put("addi", "1");
-        put("lw", "2");
-        put("sw", "3");
-        put("beq",  "4");
-        put("jmp",  "5");
-        put("and",  "6");
-        put("or" ,  "7");
-        put("nor",  "8");
+        put("sub",  "1");
+        put("and",  "2");
+        put("or" ,  "3");
+        put("nor",  "4");
+        put("addi", "5");
+        put("beq",  "6");
+        put("jmp",  "7");
+        put("lw", "8");
+        put("sw", "9");
     }};
 
     static HashMap<String, String> registers  = new HashMap<>() {{
@@ -66,8 +67,8 @@ public class Main {
 
     private static String getIm(String number, int bytes) {
         int n = Integer.parseInt(number);
-        if (n >= (Math.pow(256, bytes)))
-            throw new IllegalStateException("Immediate numbers should be smaller than " + (Math.pow(256, bytes)) + ".");
+        if (n >= (Math.pow(16, bytes)))
+            throw new IllegalStateException("Immediate numbers should be smaller than " + (Math.pow(16, bytes)) + ".");
 
         StringBuilder ans = new StringBuilder(Integer.toHexString(n) + "");
         while (ans.length() < bytes) {
@@ -83,8 +84,12 @@ public class Main {
                 case "add":
                     return opCode.get("add") + registers.get(params[1]) + registers.get(params[2])
                             + registers.get(params[3]) + "FFFF";
+                case "sub":
+                    return opCode.get("sub") + registers.get(params[1]) + registers.get(params[2])
+                            + registers.get(params[3]) + "FFFF";
                 case "addi":
-                    return opCode.get("addi") + registers.get(params[1]) + getIm(params[2], 3) + "FFF";
+                    return opCode.get("addi") + registers.get(params[1]) + registers.get(params[2]) +
+                            getIm(params[2], 4) + "F";
                 case "and":
                     return opCode.get("and") + registers.get(params[1]) + registers.get(params[2])
                             + registers.get(params[3]) + "FFFF";
@@ -96,16 +101,22 @@ public class Main {
                             + registers.get(params[3]) + "FFFF";
                 case "jmp":
                     if (labels.containsKey(params[1]))
-                        return opCode.get("jmp") + labels.get(params[1]) + "FFFFF";
+                        return opCode.get("jmp") + labels.get(params[1]) + "FFF";
                     else
-                        return opCode.get("jmp") + getIm(params[1], 2) + "FFFFF";
+                        return opCode.get("jmp") + getIm(params[1], 4) + "FFF";
                 case "beq":
-                    return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) +
-                            getIm(params[3], 2) + "FFF";
+                    if(labels.containsKey(params[3]))
+                        return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) +
+                                labels.get(params[3]) + "F";
+                    else
+                        return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) +
+                                getIm(params[3], 4) + "F";
                 case "sw":
-                    return opCode.get("sw") + registers.get(params[1]) + registers.get(params[2]) + "FFFFF";
+                    return opCode.get("sw") + registers.get(params[1]) + registers.get(params[2])
+                            + getIm(params[3], 4) + "F";
                 case "lw":
-                    return opCode.get("lw") + registers.get(params[1]) + registers.get(params[2]) + "FFFFF";
+                    return opCode.get("lw") + registers.get(params[1]) + registers.get(params[2])
+                            + getIm(params[3], 4) + "F";
             }
         } catch (Exception e) {
             System.out.println("Code is not valid.");
@@ -173,10 +184,11 @@ public class Main {
                     row = row.substring(0, Math.max(row.indexOf("#") - 1, 0));
 
                 if (row.endsWith(":")) {
-                    labels.put(row.substring(0, row.length() - 1), getIm(lineCount + "", 2));
+                    labels.put(row.substring(0, row.length() - 1), getIm(lineCount + "", 4));
                 }
                 else {
-                    lineCount++;
+                    if (!row.equals(""))
+                        lineCount++;
                 }
             }
         } catch (IOException e) {
