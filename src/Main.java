@@ -10,12 +10,12 @@ public class Main {
         put("sub",  "1");
         put("and",  "2");
         put("or" ,  "3");
-        put("nor",  "4");
-        put("addi", "5");
-        put("beq",  "6");
-        put("jmp",  "7");
-        put("lw", "8");
-        put("sw", "9");
+//        put("nor",  "4");
+        put("addi", "4");
+        put("beq",  "5");
+        put("jmp",  "6");
+        put("lw", "7");
+        put("sw", "8");
     }};
 
     static HashMap<String, String> registers  = new HashMap<>() {{
@@ -83,40 +83,40 @@ public class Main {
             switch (params[0]) {
                 case "add":
                     return opCode.get("add") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "FFFF";
+                            + registers.get(params[3]) + "ffff";
                 case "sub":
                     return opCode.get("sub") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "FFFF";
+                            + registers.get(params[3]) + "ffff";
                 case "addi":
-                    return opCode.get("addi") + registers.get(params[1]) + registers.get(params[2]) +
-                            getIm(params[2], 4) + "F";
+                    return opCode.get("addi") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                            getIm(params[2], 4);
                 case "and":
                     return opCode.get("and") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "FFFF";
+                            + registers.get(params[3]) + "ffff";
                 case "or":
                     return opCode.get("or") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "FFFF";
-                case "nor":
-                    return opCode.get("nor") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "FFFF";
+                            + registers.get(params[3]) + "ffff";
+//                case "nor":
+//                    return opCode.get("nor") + registers.get(params[1]) + registers.get(params[2])
+//                            + registers.get(params[3]) + "ffff";
                 case "jmp":
                     if (labels.containsKey(params[1]))
-                        return opCode.get("jmp") + labels.get(params[1]) + "FFF";
+                        return opCode.get("jmp") + "fff" + labels.get(params[1]);
                     else
-                        return opCode.get("jmp") + getIm(params[1], 4) + "FFF";
+                        return opCode.get("jmp") + "fff" + getIm(params[1], 4);
                 case "beq":
                     if(labels.containsKey(params[3]))
-                        return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) +
-                                labels.get(params[3]) + "F";
+                        return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                                labels.get(params[3]);
                     else
-                        return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) +
-                                getIm(params[3], 4) + "F";
+                        return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                                getIm(params[3], 4);
                 case "sw":
-                    return opCode.get("sw") + registers.get(params[1]) + registers.get(params[2])
-                            + getIm(params[3], 4) + "F";
+                    return opCode.get("sw") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                            getIm(params[3], 4);
                 case "lw":
-                    return opCode.get("lw") + registers.get(params[1]) + registers.get(params[2])
-                            + getIm(params[3], 4) + "F";
+                    return opCode.get("lw") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                            getIm(params[3], 4);
             }
         } catch (Exception e) {
             System.out.println("Code is not valid.");
