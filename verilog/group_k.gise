@@ -124,6 +124,10 @@
     <transform xil_pn:end_ts="1624561661" xil_pn:in_ck="-7040714999224702328" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1624561661">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDER_1.v"/>
       <outfile xil_pn:name="ADDER_2.v"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -162,6 +166,11 @@
     <transform xil_pn:end_ts="1624561664" xil_pn:in_ck="-7040714999224702328" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1624561664">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDER_1.v"/>
       <outfile xil_pn:name="ADDER_2.v"/>
       <outfile xil_pn:name="ALU.v"/>
@@ -188,6 +197,9 @@
     <transform xil_pn:end_ts="1624561667" xil_pn:in_ck="-7040714999224702328" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1522939682929379051" xil_pn:start_ts="1624561664">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="adder2_tst_beh.prj"/>
       <outfile xil_pn:name="adder2_tst_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -198,6 +210,7 @@
     <transform xil_pn:end_ts="1624561668" xil_pn:in_ck="-1220009742956617923" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1326962959903721048" xil_pn:start_ts="1624561667">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="adder2_tst_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
