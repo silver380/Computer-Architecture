@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "E:/UI/CA/verilog/project/group_k/PC.xst" -ofn "E:/UI/CA/verilog/project/group_k/PC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 PC.ngc PC.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o PC_map.ncd PC.ngd PC.pcf 
+par -w -intstyle ise -ol high -mt off PC_map.ncd PC.ncd PC.pcf 
