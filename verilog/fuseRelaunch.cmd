@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/UI/CA/verilog/project/group_k/ALU_tst_isim_beh.exe" -prj "E:/UI/CA/verilog/project/group_k/ALU_tst_beh.prj" "work.ALU_tst" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/UI/CA/verilog/project2/Group-K/verilog/adder2_tst_isim_beh.exe" -prj "E:/UI/CA/verilog/project2/Group-K/verilog/adder2_tst_beh.prj" "work.adder2_tst" "work.glbl" 
