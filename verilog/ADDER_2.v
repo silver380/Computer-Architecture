@@ -19,9 +19,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ADDER_2(
-		//TODO
+		input [15:0] aOO,
+		input [15:0] insMem,
+		output reg[15:0] o
 		
     );
+	 always @ (*)
+	 begin
+	 o= aOO+insMem;
+	 end
+	 
 
 
 endmodule

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-06-24T03:08:48</DateModified>
+  <DateModified>2021-06-24T21:24:58</DateModified>
   <ModuleName>PC</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/UI/CA/verilog/project/group_k/iseconfig/PC.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/UI/CA/verilog/project/group_k</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/UI/CA/verilog/project/group_k\</ImplementationReportsDirectory>
   <DateInitialized>2021-06-24T03:08:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
