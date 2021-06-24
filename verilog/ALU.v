@@ -29,13 +29,13 @@ module ALU(a,b, ALU_Result,c,sel
 	 always @(*)
     begin
         case(sel)
-        16'b0000000000000000: // 0 Addition
+        2'b00: // 0 Addition
            ALU_Result = a + b ; 
-        16'b0000000000000001: // 1 Subtraction
+        2'b01: // 1 Subtraction
            ALU_Result = a - b ;
-        16'b0000000000000010: // 2 AND
+        2'b10: // 2 AND
            ALU_Result = a & b;
-        16'b0000000000000011: // 3 OR
+        2'b11: // 3 OR
            ALU_Result = a | b;
        
         endcase
