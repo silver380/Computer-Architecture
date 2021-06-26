@@ -37,7 +37,7 @@ public class Main {
         put("$t15", "f");
     }};
 
-    static HashMap<String, String> labels = new HashMap<>();
+    static HashMap<String, Integer> labels = new HashMap<>();
 
     public static void main(String[] args) {
         fw = makeFile();
@@ -78,47 +78,49 @@ public class Main {
         return ans.toString();
     }
 
-    private static String toHex(String[] params) {
+    private static String toHex(String[] params, int nextLine) {
         try {
             switch (params[0]) {
                 case "add":
-                    return opCode.get("add") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "ffff";
+                    return opCode.get("add") + registers.get(params[2]) + registers.get(params[3])
+                            + registers.get(params[1]) + "ffff";
                 case "sub":
-                    return opCode.get("sub") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "ffff";
+                    return opCode.get("sub") + registers.get(params[2]) + registers.get(params[3])
+                            + registers.get(params[1]) + "ffff";
                 case "addi":
-                    return opCode.get("addi") + registers.get(params[1]) + registers.get(params[2]) + "f" +
-                            getIm(params[2], 4);
+                    return opCode.get("addi") + registers.get(params[2]) + registers.get(params[1]) + "f" +
+                            getIm(params[3], 4);
                 case "and":
-                    return opCode.get("and") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "ffff";
+                    return opCode.get("and") + registers.get(params[2]) + registers.get(params[3])
+                            + registers.get(params[1]) + "ffff";
                 case "or":
-                    return opCode.get("or") + registers.get(params[1]) + registers.get(params[2])
-                            + registers.get(params[3]) + "ffff";
+                    return opCode.get("or") + registers.get(params[2]) + registers.get(params[3])
+                            + registers.get(params[1]) + "ffff";
 //                case "nor":
 //                    return opCode.get("nor") + registers.get(params[1]) + registers.get(params[2])
 //                            + registers.get(params[3]) + "ffff";
                 case "jmp":
                     if (labels.containsKey(params[1]))
-                        return opCode.get("jmp") + "fff" + labels.get(params[1]);
-                    else
-                        return opCode.get("jmp") + "fff" + getIm(params[1], 4);
+                        return opCode.get("jmp") + "fff" + getIm(labels.get(params[1]) + "", 4);
+//                    else
+//                        return opCode.get("jmp") + "fff" + getIm(Integer.parseInt(params[1]) - 1 + "", 4);
                 case "beq":
                     if(labels.containsKey(params[3]))
                         return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) + "f" +
-                                labels.get(params[3]);
+                                getIm(labels.get(params[3]) - nextLine + "", 4);
                     else
                         return opCode.get("beq") + registers.get(params[1]) + registers.get(params[2]) + "f" +
-                                getIm(params[3], 4);
+                                getIm(Integer.parseInt(params[3]) - 1 + "", 4);
                 case "sw":
-                    return opCode.get("sw") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                    return opCode.get("sw") + registers.get(params[2]) + registers.get(params[1]) + "f" +
                             getIm(params[3], 4);
                 case "lw":
-                    return opCode.get("lw") + registers.get(params[1]) + registers.get(params[2]) + "f" +
+                    return opCode.get("lw") + registers.get(params[2]) + registers.get(params[1]) + "f" +
                             getIm(params[3], 4);
             }
         } catch (Exception e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
             System.out.println("Code is not valid.");
         }
         return null;
@@ -126,7 +128,7 @@ public class Main {
 
     private static FileWriter makeFile() {
         try {
-            File file = new File("output.hex");
+            File file = new File("Examples//output.hex");
             if (file.exists())
                 file.delete();
             file.createNewFile();
@@ -149,6 +151,7 @@ public class Main {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String row = "";
+            int lineCount = 0;
             while (true) {
                 row = reader.readLine();
                 if (row == null)
@@ -161,8 +164,9 @@ public class Main {
 
                 System.out.println(row);
                 if (!row.endsWith(":")) {
+                    lineCount++;
                     String[] params = row.replaceAll(",", "").split("[ \t]+");
-                    write(toHex(params));
+                    write(toHex(params, lineCount));
                 }
             }
         } catch (IOException e) {
@@ -174,7 +178,7 @@ public class Main {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String row = "";
-            int lineCount = 1;
+            int lineCount = 0;
             while (true) {
                 row = reader.readLine();
                 if (row == null)
@@ -184,7 +188,8 @@ public class Main {
                     row = row.substring(0, Math.max(row.indexOf("#") - 1, 0));
 
                 if (row.endsWith(":")) {
-                    labels.put(row.substring(0, row.length() - 1), getIm(lineCount + "", 4));
+                    System.out.println(row.substring(0, row.length() - 1) +  (lineCount));
+                    labels.put(row.substring(0, row.length() - 1), lineCount);
                 }
                 else {
                     if (!row.equals(""))
