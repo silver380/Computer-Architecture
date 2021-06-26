@@ -25,7 +25,6 @@ module ALU(a,b, ALU_Result,c,sel
 	 input [1:0] sel;
 	 output reg[15:0]  ALU_Result;
 	 output c;
-	 
 	 always @(*)
     begin
         case(sel)

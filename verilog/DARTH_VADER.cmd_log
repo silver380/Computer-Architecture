@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.xst" -ofn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.syr" 
+xst -intstyle ise -ifn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.xst" -ofn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 DARTH_VADER.ngc DARTH_VADER.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DARTH_VADER_map.ncd DARTH_VADER.ngd DARTH_VADER.pcf 
+xst -intstyle ise -ifn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.xst" -ofn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.syr" 
+xst -intstyle ise -ifn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.xst" -ofn "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 DARTH_VADER.ngc DARTH_VADER.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DARTH_VADER_map.ncd DARTH_VADER.ngd DARTH_VADER.pcf 

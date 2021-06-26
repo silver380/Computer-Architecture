@@ -41,24 +41,42 @@ TABLE OF CONTENTS
 =========================================================================
 Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\REGBank.v" into library work
 Parsing module <REGBank>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\PC.v" into library work
+Parsing module <PC>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_5.v" into library work
+Parsing module <MUX_5>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_4.v" into library work
+Parsing module <MUX_4>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_3.v" into library work
+Parsing module <MUX_3>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_2.v" into library work
+Parsing module <MUX_2>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_1.v" into library work
+Parsing module <MUX_1>.
 Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\InsMem.v" into library work
 Parsing verilog file "Parameter.v" included at line 2.
 Parsing module <InsMem>.
 Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" into library work
 Parsing verilog file "Parameter.v" included at line 2.
 Parsing module <DataMem>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\AND.v" into library work
+Parsing module <AND>.
 Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\ALU.v" into library work
 Parsing module <ALU>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_2.v" into library work
+Parsing module <ADDER_2>.
+Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_1.v" into library work
+Parsing module <ADDER_1>.
 Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" into library work
 Parsing module <DATA_PATH>.
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.66 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.19 secs
  
 --> 
 
-Total memory usage is 4470988 kilobytes
+Total memory usage is 4470860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

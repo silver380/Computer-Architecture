@@ -23,6 +23,9 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/UI/CA/verilog/project2/Group-K/verilog/CONTROL.v&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/UI/CA/verilog/project2/Group-K/verilog/DATA_PATH.v&quot; into library work</arg>
 </msg>
 

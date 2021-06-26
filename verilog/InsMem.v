@@ -29,9 +29,13 @@ module InsMem(
 	 initial
 	 
 	 begin
-	  $readmemh("./hex.txt", memory,0,14);
+	  //$readmemh("./h.hex", memory,0,14);
+	  memory[0] = 32'b1000001000111110000000000000000;
+	  memory[1] = 32'b1000010001011110000000000000001;
+	  
 	 end
 	 assign instruction =  memory[rom_addr];
+	 
 
 
 endmodule
