@@ -43,6 +43,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DataMem.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DataMem.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DataMem.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="InsMem.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="InsMem.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="InsMem.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_1.xst"/>
