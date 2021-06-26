@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 module REGBank(
 	input rw,
-	input reg[15:0] dataIn,
+	input [15:0] dataIn,
 	input clk,
-	input reg[3:0] nReg1,
-	input reg[3:0] nReg2,
-	input reg[3:0] dest,
-	output reg[15:0] reg1out,
-	output reg[15:0] reg2out
+	input [3:0] nReg1,
+	input [3:0] nReg2,
+	input [3:0] dest,
+	output wire[15:0] reg1out,
+	output wire[15:0] reg2out
     );
 
 	reg [15:0] reg_array [15:0];

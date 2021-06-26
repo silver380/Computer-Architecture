@@ -29,7 +29,7 @@ module DataMem(
 		output [15:0] mem_read_data
     );
 
-	reg [`col - 1:0] memory [`row_d - 1:0];
+	reg [15:0] memory [15:0];
 	integer f;
 	wire [2:0] ram_addr = mem_access_addr[2:0];
 	initial

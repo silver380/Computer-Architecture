@@ -1,0 +1,5 @@
+verilog work "REGBank.v"
+verilog work "InsMem.v"
+verilog work "DataMem.v"
+verilog work "ALU.v"
+verilog work "DATA_PATH.v"

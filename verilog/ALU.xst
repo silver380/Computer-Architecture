@@ -1,5 +1,5 @@
-set -tmpdir "E:/UI/CA/verilog/project/group_k/xst/projnav.tmp"
-set -xsthdpdir "E:/UI/CA/verilog/project/group_k/xst"
+set -tmpdir "E:/UI/CA/verilog/project2/Group-K/verilog/xst/projnav.tmp"
+set -xsthdpdir "E:/UI/CA/verilog/project2/Group-K/verilog/xst"
 run -compileonly yes
 -p xc7a100t-3-csg324
 -top ALU

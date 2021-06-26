@@ -1,0 +1,28 @@
+Command line:
+   reg_bacnk_tst_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61620
+
+Sun Jun 27 02:10:58 2021
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5154.26 Meg
+
+ Total Signals          : 23
+ Total Nets             : 75
+ Total Signal Drivers   : 13
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 18
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 473
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 5468.84 Meg
+
+Sun Jun 27 02:11:30 2021
+

@@ -1,18 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/UI/CA/verilog/project2/Group-K/verilog/adder2_tst_isim_beh.exe -prj E:/UI/CA/verilog/project2/Group-K/verilog/adder2_tst_beh.prj work.adder2_tst work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/UI/CA/verilog/project2/Group-K/verilog/reg_bacnk_tst_isim_beh.exe -prj E:/UI/CA/verilog/project2/Group-K/verilog/reg_bacnk_tst_beh.prj work.reg_bacnk_tst work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/ADDER_2.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/adder2_tst.v" into library work
+Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/REGBank.v" into library work
+Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/reg_bacnk_tst.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module ADDER_2
-Compiling module adder2_tst
+Compiling module REGBank
+Compiling module reg_bacnk_tst
 Compiling module glbl
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 3 Verilog Units
-Built simulation executable E:/UI/CA/verilog/project2/Group-K/verilog/adder2_tst_isim_beh.exe
-Fuse Memory Usage: 27916 KB
-Fuse CPU Usage: 484 ms
+Built simulation executable E:/UI/CA/verilog/project2/Group-K/verilog/reg_bacnk_tst_isim_beh.exe
+Fuse Memory Usage: 28768 KB
+Fuse CPU Usage: 374 ms

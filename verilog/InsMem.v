@@ -24,7 +24,7 @@ module InsMem(
 	output[15:0] instruction
     );
 	 
-	 reg [`col - 1:0] memory [`row_i - 1:0];
+	 reg [31:0] memory [15:0];
 	 wire [3 : 0] rom_addr = pc[4 : 1];
 	 initial
 	 
