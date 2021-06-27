@@ -24,10 +24,11 @@ module ALU(
 	 input [15:0] b,
 	 input [1:0] sel,
 	 output reg[15:0]  ALU_Result,
-	 output c
+	 output reg c
 	 );
 	 always @(*)
     begin
+		assign c=0;
         case(sel)
         2'b00: // 0 Addition
            ALU_Result = a + b ; 
@@ -39,6 +40,10 @@ module ALU(
            ALU_Result = a | b;
        
         endcase
+		  if(ALU_Result == 1)
+			begin
+			assign c = 1;
+			end
     end
 
 endmodule

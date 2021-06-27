@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   23:15:18 06/24/2021
+// Create Date:   20:21:41 06/27/2021
 // Design Name:   ALU
-// Module Name:   E:/UI/CA/verilog/project/group_k/ALU_tst.v
+// Module Name:   E:/UI/CA/verilog/project2/Group-K/verilog/ALU_tst.v
 // Project Name:  group_k
 // Target Device:  
 // Tool versions:  
@@ -38,9 +38,9 @@ module ALU_tst;
 	ALU uut (
 		.a(a), 
 		.b(b), 
+		.sel(sel), 
 		.ALU_Result(ALU_Result), 
-		.c(c), 
-		.sel(sel)
+		.c(c)
 	);
 
 	initial begin
@@ -50,10 +50,11 @@ module ALU_tst;
 		sel = -1;
 		for(i=0;i<4;i=i+1)
 		begin
-		sel=sel+2'b01;
+		sel = sel + 2'b01;
 		#50;
 		end
-	end
 
+	end
+      
 endmodule
 
