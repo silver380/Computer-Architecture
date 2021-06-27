@@ -45,11 +45,11 @@ Parsing module <DataMem>.
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.30 secs
+Total CPU time to Xst completion: 4.24 secs
  
 --> 
 
-Total memory usage is 4471180 kilobytes
+Total memory usage is 4470860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -22,15 +22,13 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "E:/UI/CA/verilog/project2/Group-K/verilog/ALU.v";
-static unsigned int ng1[] = {0U, 0U};
-static unsigned int ng2[] = {1U, 0U};
-static unsigned int ng3[] = {2U, 0U};
-static unsigned int ng4[] = {3U, 0U};
-static int ng5[] = {1, 0};
-static int ng6[] = {0, 0};
+static int ng1[] = {0, 0};
+static unsigned int ng2[] = {0U, 0U};
+static unsigned int ng3[] = {1U, 0U};
+static unsigned int ng4[] = {2U, 0U};
+static unsigned int ng5[] = {3U, 0U};
+static int ng6[] = {1, 0};
 
-static void NetReassign_31_1(char *);
-static void NetReassign_45_2(char *);
 
 
 static void Always_29_0(char *t0)
@@ -84,7 +82,7 @@ LAB0:    t1 = (t0 + 2848U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(29, ng0);
-    t2 = (t0 + 3664);
+    t2 = (t0 + 3168);
     *((int *)t2) = 1;
     t3 = (t0 + 2880);
     *((char **)t3) = t2;
@@ -94,31 +92,29 @@ LAB1:    return;
 LAB4:    xsi_set_current_line(30, ng0);
 
 LAB5:    xsi_set_current_line(31, ng0);
-    t4 = (t0 + 1928);
-    xsi_set_assignedflag(t4);
-    t5 = (t0 + 5136);
-    *((int *)t5) = 1;
-    NetReassign_31_1(t0);
+    t4 = ((char*)((ng1)));
+    t5 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t5, t4, 0, 0, 1);
     xsi_set_current_line(32, ng0);
     t2 = (t0 + 1368U);
     t3 = *((char **)t2);
 
-LAB6:    t2 = ((char*)((ng1)));
+LAB6:    t2 = ((char*)((ng2)));
     t6 = xsi_vlog_unsigned_case_compare(t3, 2, t2, 2);
     if (t6 == 1)
         goto LAB7;
 
-LAB8:    t2 = ((char*)((ng2)));
+LAB8:    t2 = ((char*)((ng3)));
     t6 = xsi_vlog_unsigned_case_compare(t3, 2, t2, 2);
     if (t6 == 1)
         goto LAB9;
 
-LAB10:    t2 = ((char*)((ng3)));
+LAB10:    t2 = ((char*)((ng4)));
     t6 = xsi_vlog_unsigned_case_compare(t3, 2, t2, 2);
     if (t6 == 1)
         goto LAB11;
 
-LAB12:    t2 = ((char*)((ng4)));
+LAB12:    t2 = ((char*)((ng5)));
     t6 = xsi_vlog_unsigned_case_compare(t3, 2, t2, 2);
     if (t6 == 1)
         goto LAB13;
@@ -128,7 +124,7 @@ LAB15:    xsi_set_current_line(43, ng0);
     t2 = (t0 + 1768);
     t4 = (t2 + 56U);
     t5 = *((char **)t4);
-    t7 = ((char*)((ng5)));
+    t7 = ((char*)((ng1)));
     memset(t8, 0, 8);
     t12 = (t5 + 4);
     t13 = (t7 + 4);
@@ -294,81 +290,17 @@ LAB24:    t21 = (t8 + 4);
 LAB26:    xsi_set_current_line(44, ng0);
 
 LAB29:    xsi_set_current_line(45, ng0);
-    t39 = (t0 + 1928);
-    xsi_set_assignedflag(t39);
-    t40 = (t0 + 5140);
-    *((int *)t40) = 1;
-    NetReassign_45_2(t0);
+    t39 = ((char*)((ng6)));
+    t40 = (t0 + 1928);
+    xsi_vlogvar_assign_value(t40, t39, 0, 0, 1);
     goto LAB28;
-
-}
-
-static void NetReassign_31_1(char *t0)
-{
-    char *t1;
-    char *t2;
-    unsigned int t3;
-    char *t4;
-    char *t5;
-
-LAB0:    t1 = (t0 + 3096U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
-
-LAB3:    goto *t2;
-
-LAB2:    xsi_set_current_line(31, ng0);
-    t3 = 0;
-    t2 = ((char*)((ng6)));
-    t4 = (t0 + 5136);
-    if (*((int *)t4) > 0)
-        goto LAB4;
-
-LAB5:
-LAB1:    return;
-LAB4:    t5 = (t0 + 1928);
-    xsi_vlogvar_assignassignvalue(t5, t2, 0, 0, 0, 1, ((int*)(t4)));
-    t3 = 1;
-    goto LAB5;
-
-}
-
-static void NetReassign_45_2(char *t0)
-{
-    char *t1;
-    char *t2;
-    unsigned int t3;
-    char *t4;
-    char *t5;
-
-LAB0:    t1 = (t0 + 3344U);
-    t2 = *((char **)t1);
-    if (t2 == 0)
-        goto LAB2;
-
-LAB3:    goto *t2;
-
-LAB2:    xsi_set_current_line(45, ng0);
-    t3 = 0;
-    t2 = ((char*)((ng5)));
-    t4 = (t0 + 5140);
-    if (*((int *)t4) > 0)
-        goto LAB4;
-
-LAB5:
-LAB1:    return;
-LAB4:    t5 = (t0 + 1928);
-    xsi_vlogvar_assignassignvalue(t5, t2, 0, 0, 0, 1, ((int*)(t4)));
-    t3 = 1;
-    goto LAB5;
 
 }
 
 
 extern void work_m_00000000000261988861_0886308060_init()
 {
-	static char *pe[] = {(void *)Always_29_0,(void *)NetReassign_31_1,(void *)NetReassign_45_2};
+	static char *pe[] = {(void *)Always_29_0};
 	xsi_register_didat("work_m_00000000000261988861_0886308060", "isim/ALU_tst_isim_beh.exe.sim/work/m_00000000000261988861_0886308060.didat");
 	xsi_register_executes(pe);
 }

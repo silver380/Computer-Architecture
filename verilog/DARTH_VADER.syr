@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: DARTH_VADER.prj
 
@@ -259,7 +259,6 @@ Unit <MUX_2> synthesized.
 
 Synthesizing Unit <ALU>.
     Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\ALU.v".
-WARNING:Xst:653 - Signal <c> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <ALU> synthesized.
@@ -445,13 +444,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.40 secs
+Total CPU time to Xst completion: 5.81 secs
  
 --> 
 
-Total memory usage is 4680284 kilobytes
+Total memory usage is 4680412 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

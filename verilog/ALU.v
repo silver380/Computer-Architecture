@@ -28,7 +28,7 @@ module ALU(
 	 );
 	 always @(*)
     begin
-		assign c=0;
+		 c=0;
         case(sel)
         2'b00: // 0 Addition
            ALU_Result = a + b ; 
@@ -40,9 +40,9 @@ module ALU(
            ALU_Result = a | b;
        
         endcase
-		  if(ALU_Result == 1)
+		  if(ALU_Result == 0)
 			begin
-			assign c = 1;
+			 c = 1;
 			end
     end
 
