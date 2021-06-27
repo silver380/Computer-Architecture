@@ -55,5 +55,5 @@ module DATA_PATH(
  MUX_4 mux4(mux3o,insout[15:0],jump,npc);
  DataMem dm(clk,alu_res,rgbo2,mem_write,mem_read,dmo);
  MUX_5 mux5(alu_res,dmo,mem_to_reg,dataIn);
- assign opcdoe = insout[31:28];
+ assign opcode = insout[31:28];
 endmodule
