@@ -15,7 +15,8 @@ it has 4 parts:
 ___________________________________________________________________________________
 
 
-**Instruction Set**
+- **Instruction Set**
+
 Instructions have the following format:
 
 ```
