@@ -40,7 +40,7 @@ J-type (jump)
 ___________________________________________________________________________________
 
 | op | Instruction | Function |
-| --- | --- | -- |
+| :---: | :---: | :---: |
 | 0000 | add | REGDest <- REGSource + REGSource |
 | 0001 | sub | REGDest <- REGSource - REGSource |
 | 0010 | and | REGDest <- REGSource & REGSource |
