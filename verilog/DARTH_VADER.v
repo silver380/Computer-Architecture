@@ -19,7 +19,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module DARTH_VADER(
-	input clk
+	input clk,
+	output c
     );
 	wire reg_dst, beq, reg_write, jump, alu_src, mem_to_reg, mem_read, mem_write;
 	wire[1:0] alu_op;
@@ -34,5 +35,5 @@ CONTROL control(
 	alu_op,
 	reg_dst, beq, reg_write, jump, alu_src, mem_to_reg, mem_read, mem_write
 	);
-	
+	assign c=~clk;
 endmodule

@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sun Jun 27 04:12:04 2021">
+  <application stringID="Xst" timeStamp="Sun Jun 27 05:30:07 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -116,17 +116,27 @@
       <section stringID="XST_">
         <item stringID="XST_TOP_LEVEL_OUTPUT_FILE_NAME" value="DARTH_VADER.ngc"/>
       </section>
-      <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE"/>
+      <section stringID="XST_PRIMITIVE_AND_BLACK_BOX_USAGE">
+        <item dataType="int" stringID="XST_BELS" value="1">
+          <item dataType="int" stringID="XST_INV" value="1"/>
+        </item>
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="2">
+          <item dataType="int" stringID="XST_IBUF" value="1"/>
+          <item dataType="int" stringID="XST_OBUF" value="1"/>
+        </item>
+      </section>
     </section>
     <section stringID="XST_DEVICE_UTILIZATION_SUMMARY">
       <item stringID="XST_SELECTED_DEVICE" value="7a100tcsg324-3"/>
-      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="0"/>
-      <item AVAILABLE="0" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="0"/>
-      <item AVAILABLE="0" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
-      <item AVAILABLE="0" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
+      <item AVAILABLE="63400" dataType="int" label="Number of Slice LUTs" stringID="XST_NUMBER_OF_SLICE_LUTS" value="1"/>
+      <item AVAILABLE="63400" dataType="int" label="Number used as Logic" stringID="XST_NUMBER_USED_AS_LOGIC" value="1"/>
+      <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="XST_NUMBER_OF_LUT_FLIP_FLOP_PAIRS_USED" value="1"/>
+      <item AVAILABLE="1" dataType="int" label="Number with an unused Flip Flop" stringID="XST_NUMBER_WITH_AN_UNUSED_FLIP_FLOP" value="1"/>
+      <item AVAILABLE="1" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
+      <item AVAILABLE="1" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="0"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="1"/>
-      <item AVAILABLE="210" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="2"/>
+      <item AVAILABLE="210" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="2"/>
     </section>
     <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
       <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>
