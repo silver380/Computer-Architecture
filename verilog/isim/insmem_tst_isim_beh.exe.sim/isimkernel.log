@@ -1,0 +1,28 @@
+Command line:
+   insmem_tst_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53104
+
+Sun Jun 27 06:34:48 2021
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5154.25 Meg
+
+ Total Signals          : 17
+ Total Nets             : 65
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 673
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5468.83 Meg
+
+Sun Jun 27 06:35:21 2021
+

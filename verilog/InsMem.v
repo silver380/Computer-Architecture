@@ -25,13 +25,13 @@ module InsMem(
     );
 	 
 	 reg [31:0] memory [15:0];
-	 wire [3 : 0] rom_addr = pc[4 : 1];
+	 wire [3 : 0] rom_addr = pc[3 : 0];
 	 initial
 	 
 	 begin
-	  //$readmemh("./h.hex", memory,0,14);
-	  memory[0] = 32'b1000001000111110000000000000000;
-	  memory[1] = 32'b1000010001011110000000000000001;
+	  $readmemh("E:/UI/CA/verilog/project2/Group-K/verilog/test/h.hex", memory);
+	  //memory[0] = 32'b1000001000111110000000000000000;
+	  //memory[1] = 32'b1000010001011110000000000000001;
 	  
 	 end
 	 assign instruction =  memory[rom_addr];

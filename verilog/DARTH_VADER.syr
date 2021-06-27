@@ -154,8 +154,8 @@ Elaborating module <ADDER_1>.
 WARNING:HDLCompiler:413 - "E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_1.v" Line 27: Result of 17-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <InsMem>.
-WARNING:HDLCompiler:413 - "E:\UI\CA\verilog\project2\Group-K\verilog\InsMem.v" Line 37: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:189 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 47: Size mismatch in connection of port <instruction>. Formal port size is 16-bit while actual signal size is 32-bit.
+Reading initialization file \"E:/UI/CA/verilog/project2/Group-K/verilog/test/h.hex\".
+WARNING:HDLCompiler:1670 - "E:\UI\CA\verilog\project2\Group-K\verilog\InsMem.v" Line 32: Signal <memory> in initial block is partially initialized.
 
 Elaborating module <ADDER_2>.
 
@@ -166,8 +166,6 @@ Elaborating module <REGBank>.
 Elaborating module <MUX_2>.
 
 Elaborating module <ALU>.
-WARNING:HDLCompiler:189 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 52: Size mismatch in connection of port <ALU_Result>. Formal port size is 16-bit while actual signal size is 2-bit.
-WARNING:HDLCompiler:1127 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 52: Assignment to alu_op ignored, since the identifier is never used
 
 Elaborating module <AND>.
 
@@ -176,11 +174,14 @@ Elaborating module <MUX_3>.
 Elaborating module <MUX_4>.
 
 Elaborating module <DataMem>.
+Reading initialization file \"E:/UI/CA/verilog/project2/Group-K/verilog/test/t.txt\".
+WARNING:HDLCompiler:1670 - "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 37: Signal <memory> in initial block is partially initialized.
+WARNING:HDLCompiler:817 - "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 41: System task fmonitor ignored for synthesis
+WARNING:HDLCompiler:817 - "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 51: System task fclose ignored for synthesis
 
 Elaborating module <MUX_5>.
 WARNING:HDLCompiler:413 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 58: Result of 4-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:1127 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 58: Assignment to opcdoe ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 40: Net <c> does not have a driver.
 
 Elaborating module <CONTROL>.
 WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 45. All outputs of instance <pc_1> of block <PC> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
@@ -263,11 +264,6 @@ Top Level Output File Name         : DARTH_VADER.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
-#      INV                         : 1
-# IO Buffers                       : 2
-#      IBUF                        : 1
-#      OBUF                        : 1
 
 Device utilization summary:
 ---------------------------
@@ -276,19 +272,17 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    1  out of  63400     0%  
-    Number used as Logic:                 1  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      1
-   Number with an unused Flip Flop:       1  out of      1   100%  
-   Number with an unused LUT:             0  out of      1     0%  
-   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           2
- Number of bonded IOBs:                   2  out of    210     0%  
+ Number of IOs:                           1
+ Number of bonded IOBs:                   0  out of    210     0%  
 
 Specific Feature Utilization:
 
@@ -323,30 +317,11 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 0.673ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               0.673ns (Levels of Logic = 3)
-  Source:            clk (PAD)
-  Destination:       c (PAD)
-
-  Data Path: clk to c
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.279  clk_IBUF (clk_IBUF)
-     INV:I->O              1   0.113   0.279  c1_INV_0 (c_OBUF)
-     OBUF:I->O                 0.000          c_OBUF (c)
-    ----------------------------------------
-    Total                      0.673ns (0.114ns logic, 0.559ns route)
-                                       (16.9% logic, 83.1% route)
 
 =========================================================================
 
@@ -357,13 +332,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.07 secs
+Total CPU time to Xst completion: 6.09 secs
  
 --> 
 
-Total memory usage is 4690716 kilobytes
+Total memory usage is 4678172 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   23 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

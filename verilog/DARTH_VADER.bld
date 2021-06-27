@@ -6,6 +6,9 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 DARTH_VADER.ngd
 
 Reading NGO file "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.ngc" ...
+Loading design module
+"E:\UI\CA\verilog\project2\Group-K\verilog/DARTH_VADER.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
 Gathering constraint information from source properties...
 Done.
 
@@ -24,9 +27,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   1
 
-Total memory usage is 4439092 kilobytes
+Total memory usage is 4439284 kilobytes
 
 Writing NGD file "DARTH_VADER.ngd" ...
 Total REAL time to NGDBUILD completion:  4 sec

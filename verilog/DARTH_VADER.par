@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-SULYVAHN::  Sun Jun 27 05:30:36 2021
+SULYVAHN::  Sun Jun 27 06:52:08 2021
 
 par -w -intstyle ise -ol high -mt off DARTH_VADER_map.ncd DARTH_VADER.ncd
 DARTH_VADER.pcf 
@@ -75,8 +75,8 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 9 secs 
-Finished initial Timing Analysis.  REAL time: 9 secs 
+Starting initial Timing Analysis.  REAL time: 8 secs 
+Finished initial Timing Analysis.  REAL time: 8 secs 
 
 Starting Router
 
