@@ -8,10 +8,10 @@ Its general architecture looks like a MIPS unicycle.
 
 it has 4 parts:
 
-. Register File
-. ALU: Arithmetic Logic Unit
-. Control: responsible for creating control flags throughout the CPU
-. CPU: containing the full assembly of the other modules.
+- Register File
+- ALU: Arithmetic Logic Unit
+- Control: responsible for creating control flags throughout the CPU
+- CPU: containing the full assembly of the other modules.
 ___________________________________________________________________________________
 
 
