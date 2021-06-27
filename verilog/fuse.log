@@ -1,49 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/UI/CA/verilog/project2/Group-K/verilog/dv_tst_isim_beh.exe -prj E:/UI/CA/verilog/project2/Group-K/verilog/dv_tst_beh.prj work.dv_tst work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/UI/CA/verilog/project2/Group-K/verilog/control_tst_isim_beh.exe -prj E:/UI/CA/verilog/project2/Group-K/verilog/control_tst_beh.prj work.control_tst work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/REGBank.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/PC.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/MUX_5.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/MUX_4.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/MUX_3.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/MUX_2.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/MUX_1.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/InsMem.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/DataMem.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/AND.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/ALU.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/ADDER_2.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/ADDER_1.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/DATA_PATH.v" into library work
 Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/CONTROL.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/DARTH_VADER.v" into library work
-Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/dv_tst.v" into library work
+Analyzing Verilog file "E:/UI/CA/verilog/project2/Group-K/verilog/control_tst.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module PC
-Compiling module ADDER_1
-Compiling module InsMem
-Compiling module ADDER_2
-Compiling module MUX_1
-Compiling module REGBank
-Compiling module MUX_2
-Compiling module ALU
-Compiling module AND
-Compiling module MUX_3
-Compiling module MUX_4
-Compiling module DataMem
-Compiling module MUX_5
-Compiling module DATA_PATH
 Compiling module CONTROL
-Compiling module DARTH_VADER
-Compiling module dv_tst
+Compiling module control_tst
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
-Compiled 18 Verilog Units
-Built simulation executable E:/UI/CA/verilog/project2/Group-K/verilog/dv_tst_isim_beh.exe
-Fuse Memory Usage: 29364 KB
-Fuse CPU Usage: 436 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable E:/UI/CA/verilog/project2/Group-K/verilog/control_tst_isim_beh.exe
+Fuse Memory Usage: 28808 KB
+Fuse CPU Usage: 499 ms

@@ -5,70 +5,43 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_1.v" Line 27: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_1.v" Line 27: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1670" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\InsMem.v" Line 32: Signal &lt;<arg fmt="%s" index="1">memory</arg>&gt; in initial block is partially initialized.
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"E:\UI\CA\verilog\project2\Group-K\verilog\InsMem.v" Line 32: Signal &lt;<arg fmt="%s" index="1">memory</arg>&gt; in initial block is partially initialized.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1670" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 37: Signal &lt;<arg fmt="%s" index="1">memory</arg>&gt; in initial block is partially initialized.
+<msg type="warning" file="HDLCompiler" num="1670" delta="old" >"E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 37: Signal &lt;<arg fmt="%s" index="1">memory</arg>&gt; in initial block is partially initialized.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="817" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 41: System task <arg fmt="%s" index="1">fmonitor</arg> ignored for synthesis
+<msg type="warning" file="HDLCompiler" num="817" delta="old" >"E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 41: System task <arg fmt="%s" index="1">fmonitor</arg> ignored for synthesis
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="817" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 51: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
+<msg type="warning" file="HDLCompiler" num="817" delta="old" >"E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 51: System task <arg fmt="%s" index="1">fclose</arg> ignored for synthesis
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 58: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DARTH_VADER.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">dp</arg>&gt; of block &lt;<arg fmt="%s" index="4">DATA_PATH</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DARTH_VADER</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 58: Assignment to <arg fmt="%s" index="1">opcdoe</arg> ignored, since the identifier is never used
+<msg type="warning" file="Xst" num="2972" delta="old" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DARTH_VADER.v</arg>&quot; line <arg fmt="%d" index="2">33</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">control</arg>&gt; of block &lt;<arg fmt="%s" index="4">CONTROL</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DARTH_VADER</arg>&gt;. Underlying logic will be removed.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">45</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">pc_1</arg>&gt; of block &lt;<arg fmt="%s" index="4">PC</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pc&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">46</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">adder1</arg>&gt; of block &lt;<arg fmt="%s" index="4">ADDER_1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pc&lt;15:5&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">47</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">insmem</arg>&gt; of block &lt;<arg fmt="%s" index="4">InsMem</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">memory</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">InsMem</arg>&apos;, is tied to its initial value.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">48</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">adder2</arg>&gt; of block &lt;<arg fmt="%s" index="4">ADDER_2</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">c</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">49</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">mux1</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX_1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">mem_access_addr&lt;15:3&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">50</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">rgb</arg>&gt; of block &lt;<arg fmt="%s" index="4">REGBank</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">51</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">mux2</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX_2</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">52</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">alu</arg>&gt; of block &lt;<arg fmt="%s" index="4">ALU</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">53</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">and1</arg>&gt; of block &lt;<arg fmt="%s" index="4">AND</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">54</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">mux3</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX_3</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">55</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">mux4</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX_4</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">56</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">dm</arg>&gt; of block &lt;<arg fmt="%s" index="4">DataMem</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v</arg>&quot; line <arg fmt="%d" index="2">57</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">mux5</arg>&gt; of block &lt;<arg fmt="%s" index="4">MUX_5</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DATA_PATH</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DARTH_VADER.v</arg>&quot; line <arg fmt="%d" index="2">28</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">dp</arg>&gt; of block &lt;<arg fmt="%s" index="4">DATA_PATH</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DARTH_VADER</arg>&gt;. Underlying logic will be removed.
-</msg>
-
-<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">E:\UI\CA\verilog\project2\Group-K\verilog\DARTH_VADER.v</arg>&quot; line <arg fmt="%d" index="2">33</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">control</arg>&gt; of block &lt;<arg fmt="%s" index="4">CONTROL</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">DARTH_VADER</arg>&gt;. Underlying logic will be removed.
+<msg type="warning" file="Xst" num="3015" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">memory</arg>&gt; may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
 </msg>
 
 </messages>

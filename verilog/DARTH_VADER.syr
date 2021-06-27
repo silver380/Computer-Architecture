@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: DARTH_VADER.prj
 
@@ -180,23 +180,8 @@ WARNING:HDLCompiler:817 - "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" 
 WARNING:HDLCompiler:817 - "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v" Line 51: System task fclose ignored for synthesis
 
 Elaborating module <MUX_5>.
-WARNING:HDLCompiler:413 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 58: Result of 4-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:1127 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" Line 58: Assignment to opcdoe ignored, since the identifier is never used
 
 Elaborating module <CONTROL>.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 45. All outputs of instance <pc_1> of block <PC> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 46. All outputs of instance <adder1> of block <ADDER_1> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 47. All outputs of instance <insmem> of block <InsMem> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 48. All outputs of instance <adder2> of block <ADDER_2> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 49. All outputs of instance <mux1> of block <MUX_1> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 50. All outputs of instance <rgb> of block <REGBank> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 51. All outputs of instance <mux2> of block <MUX_2> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 52. All outputs of instance <alu> of block <ALU> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 53. All outputs of instance <and1> of block <AND> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 54. All outputs of instance <mux3> of block <MUX_3> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 55. All outputs of instance <mux4> of block <MUX_4> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 56. All outputs of instance <dm> of block <DataMem> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
-WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DATA_PATH.v" line 57. All outputs of instance <mux5> of block <MUX_5> are unconnected in block <DATA_PATH>. Underlying logic will be removed.
 WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DARTH_VADER.v" line 28. All outputs of instance <dp> of block <DATA_PATH> are unconnected in block <DARTH_VADER>. Underlying logic will be removed.
 WARNING:Xst:2972 - "E:\UI\CA\verilog\project2\Group-K\verilog\DARTH_VADER.v" line 33. All outputs of instance <control> of block <CONTROL> are unconnected in block <DARTH_VADER>. Underlying logic will be removed.
 
@@ -209,6 +194,108 @@ Synthesizing Unit <DARTH_VADER>.
     Summary:
 	no macro.
 Unit <DARTH_VADER> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\PC.v".
+    Found 1-bit register for signal <pc<15>>.
+    Found 1-bit register for signal <pc<14>>.
+    Found 1-bit register for signal <pc<13>>.
+    Found 1-bit register for signal <pc<12>>.
+    Found 1-bit register for signal <pc<11>>.
+    Found 1-bit register for signal <pc<10>>.
+    Found 1-bit register for signal <pc<9>>.
+    Found 1-bit register for signal <pc<8>>.
+    Found 1-bit register for signal <pc<7>>.
+    Found 1-bit register for signal <pc<6>>.
+    Found 1-bit register for signal <pc<5>>.
+    Found 1-bit register for signal <pc<4>>.
+    Found 1-bit register for signal <pc<3>>.
+    Found 1-bit register for signal <pc<2>>.
+    Found 1-bit register for signal <pc<1>>.
+    Found 1-bit register for signal <pc<0>>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <ADDER_1>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_1.v".
+    Summary:
+	no macro.
+Unit <ADDER_1> synthesized.
+
+Synthesizing Unit <InsMem>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\InsMem.v".
+WARNING:Xst:647 - Input <pc<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pc<15:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'memory', unconnected in block 'InsMem', is tied to its initial value.
+    Found 16x32-bit single-port Read Only RAM <Mram_memory> for signal <memory>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <InsMem> synthesized.
+
+Synthesizing Unit <ADDER_2>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\ADDER_2.v".
+    Summary:
+	no macro.
+Unit <ADDER_2> synthesized.
+
+Synthesizing Unit <MUX_1>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_1.v".
+    Summary:
+	no macro.
+Unit <MUX_1> synthesized.
+
+Synthesizing Unit <REGBank>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\REGBank.v".
+    Summary:
+	no macro.
+Unit <REGBank> synthesized.
+
+Synthesizing Unit <MUX_2>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_2.v".
+    Summary:
+	no macro.
+Unit <MUX_2> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\ALU.v".
+WARNING:Xst:653 - Signal <c> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <AND>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\AND.v".
+    Summary:
+	no macro.
+Unit <AND> synthesized.
+
+Synthesizing Unit <MUX_3>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_3.v".
+    Summary:
+	no macro.
+Unit <MUX_3> synthesized.
+
+Synthesizing Unit <MUX_4>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_4.v".
+    Summary:
+	no macro.
+Unit <MUX_4> synthesized.
+
+Synthesizing Unit <DataMem>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\DataMem.v".
+WARNING:Xst:647 - Input <mem_access_addr<15:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3015 - Contents of array <memory> may be accessed with an index that does not cover the full array size or with a negative index. The RAM size is reduced to the index upper access or for only positive index values.
+    Found 8x16-bit single-port RAM <Mram_memory> for signal <memory>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <DataMem> synthesized.
+
+Synthesizing Unit <MUX_5>.
+    Related source file is "E:\UI\CA\verilog\project2\Group-K\verilog\MUX_5.v".
+    Summary:
+	no macro.
+Unit <MUX_5> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -357,14 +444,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.94 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.24 secs
  
 --> 
 
-Total memory usage is 4690268 kilobytes
+Total memory usage is 4683164 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   22 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
