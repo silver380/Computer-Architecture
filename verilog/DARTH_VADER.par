@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-SULYVAHN::  Sun Jun 27 06:52:08 2021
+SULYVAHN::  Sun Jun 27 07:51:24 2021
 
 par -w -intstyle ise -ol high -mt off DARTH_VADER_map.ncd DARTH_VADER.ncd
 DARTH_VADER.pcf 
@@ -87,21 +87,21 @@ Phase  2  : 1 unrouted;      REAL time: 9 secs
 
 Phase  3  : 0 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
 Updating file: DARTH_VADER.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
-Total REAL time to Router completion: 12 secs 
-Total CPU time to Router completion: 12 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Total REAL time to Router completion: 13 secs 
+Total CPU time to Router completion: 13 secs 
 
 Partition Implementation Status
 -------------------------------

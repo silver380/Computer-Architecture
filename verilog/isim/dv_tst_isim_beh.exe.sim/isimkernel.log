@@ -1,0 +1,28 @@
+Command line:
+   dv_tst_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  61264
+
+Sun Jun 27 07:47:57 2021
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.26 Meg
+
+ Total Signals          : 99
+ Total Nets             : 251
+ Total Signal Drivers   : 33
+ Total Blocks           : 18
+ Total Primitive Blocks : 15
+ Total Processes        : 51
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 1562
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 5154.26 Meg
+
+Sun Jun 27 07:48:06 2021
+

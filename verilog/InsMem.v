@@ -25,7 +25,7 @@ module InsMem(
     );
 	 
 	 reg [31:0] memory [15:0];
-	 wire [3 : 0] rom_addr = pc[3 : 0];
+	 wire [3 : 0] rom_addr = pc[4 : 1];
 	 initial
 	 
 	 begin
