@@ -21,7 +21,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module InsMem(
 	input[15:0] pc,
-	output[15:0] instruction
+	output[31:0] instruction
     );
 	 
 	 reg [31:0] memory [15:0];

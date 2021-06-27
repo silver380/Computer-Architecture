@@ -60,9 +60,40 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CONTROL_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="CONTROL_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CONTROL_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DARTH_VADER.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DARTH_VADER.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="DARTH_VADER.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="DARTH_VADER.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="DARTH_VADER.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="DARTH_VADER.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="DARTH_VADER.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="DARTH_VADER.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="DARTH_VADER.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="DARTH_VADER.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="DARTH_VADER.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="DARTH_VADER.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="DARTH_VADER.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DARTH_VADER.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="DARTH_VADER.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="DARTH_VADER.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="DARTH_VADER.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="DARTH_VADER.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="DARTH_VADER.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="DARTH_VADER.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="DARTH_VADER.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="DARTH_VADER.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DARTH_VADER_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="DARTH_VADER_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DARTH_VADER_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="DARTH_VADER_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="DARTH_VADER_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="DARTH_VADER_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DARTH_VADER_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DARTH_VADER_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="DARTH_VADER_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="DARTH_VADER_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DARTH_VADER_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="DARTH_VADER_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="DARTH_VADER_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="DARTH_VADER_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="DARTH_VADER_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DATA_PATH.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DATA_PATH.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="DATA_PATH.xst"/>
@@ -126,6 +157,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="adder1_tst_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adder1_tst_stx_beh.prj"/>
@@ -272,11 +304,103 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1624742845" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981219660795875" xil_pn:start_ts="1624742845">
+    <transform xil_pn:end_ts="1624755549" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8129186172504234887" xil_pn:start_ts="1624755549">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755549" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2737718556667785759" xil_pn:start_ts="1624755549">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755549" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1624755549">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755549" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5948628702153037659" xil_pn:start_ts="1624755549">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755549" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1624755549">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755549" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6048247019738762283" xil_pn:start_ts="1624755549">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755614" xil_pn:in_ck="8730130666240587313" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-6118598177958073346" xil_pn:start_ts="1624755606">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CONTROL.ngr"/>
+      <outfile xil_pn:name="DARTH_VADER.lso"/>
+      <outfile xil_pn:name="DARTH_VADER.ngc"/>
+      <outfile xil_pn:name="DARTH_VADER.ngr"/>
+      <outfile xil_pn:name="DARTH_VADER.prj"/>
+      <outfile xil_pn:name="DARTH_VADER.stx"/>
+      <outfile xil_pn:name="DARTH_VADER.syr"/>
+      <outfile xil_pn:name="DARTH_VADER.xst"/>
+      <outfile xil_pn:name="DARTH_VADER_xst.xrpt"/>
+      <outfile xil_pn:name="PC.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755558" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5879920138484268666" xil_pn:start_ts="1624755558">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755620" xil_pn:in_ck="556931800375337834" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3302157397610023602" xil_pn:start_ts="1624755614">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="DARTH_VADER.bld"/>
+      <outfile xil_pn:name="DARTH_VADER.ngd"/>
+      <outfile xil_pn:name="DARTH_VADER_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755636" xil_pn:in_ck="-6370016336438613299" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1624755620">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="DARTH_VADER.pcf"/>
+      <outfile xil_pn:name="DARTH_VADER_map.map"/>
+      <outfile xil_pn:name="DARTH_VADER_map.mrp"/>
+      <outfile xil_pn:name="DARTH_VADER_map.ncd"/>
+      <outfile xil_pn:name="DARTH_VADER_map.ngm"/>
+      <outfile xil_pn:name="DARTH_VADER_map.xrpt"/>
+      <outfile xil_pn:name="DARTH_VADER_summary.xml"/>
+      <outfile xil_pn:name="DARTH_VADER_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755662" xil_pn:in_ck="3577753054084379128" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1624755636">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="DARTH_VADER.ncd"/>
+      <outfile xil_pn:name="DARTH_VADER.pad"/>
+      <outfile xil_pn:name="DARTH_VADER.par"/>
+      <outfile xil_pn:name="DARTH_VADER.ptwx"/>
+      <outfile xil_pn:name="DARTH_VADER.unroutes"/>
+      <outfile xil_pn:name="DARTH_VADER.xpi"/>
+      <outfile xil_pn:name="DARTH_VADER_pad.csv"/>
+      <outfile xil_pn:name="DARTH_VADER_pad.txt"/>
+      <outfile xil_pn:name="DARTH_VADER_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1624755662" xil_pn:in_ck="7051836794555075485" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1624755651">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="DARTH_VADER.twr"/>
+      <outfile xil_pn:name="DARTH_VADER.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>
 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to E:/UI/CA/verilog/project2/Group-K/verilog/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: ALU.prj
 
@@ -43,12 +43,12 @@ Analyzing Verilog file "E:\UI\CA\verilog\project2\Group-K\verilog\ALU.v" into li
 Parsing module <ALU>.
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.87 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.49 secs
  
 --> 
 
-Total memory usage is 4471564 kilobytes
+Total memory usage is 4471500 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
