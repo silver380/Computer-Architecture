@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "E:/UI/CA/verilog/project/group_k/MUX_1.v";
+static const char *ng0 = "E:/UI/CA/verilog/project2/Group-K/verilog/MUX_1.v";
 static int ng1[] = {0, 0};
 
 

@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   06:30:10 06/27/2021
+// Create Date:   22:07:53 06/28/2021
 // Design Name:   InsMem
 // Module Name:   E:/UI/CA/verilog/project2/Group-K/verilog/insmem_tst.v
 // Project Name:  group_k
@@ -29,6 +29,7 @@ module insmem_tst;
 
 	// Outputs
 	wire [31:0] instruction;
+	integer i;
 
 	// Instantiate the Unit Under Test (UUT)
 	InsMem uut (
@@ -41,10 +42,14 @@ module insmem_tst;
 		pc = 0;
 
 		// Wait 100 ns for global reset to finish
-		#100;
-		pc=1;
-		#100;
-		pc=2;
+		
+		for(i=0;i<=4;i=i+1)
+		begin
+		pc = pc+1;
+		#50;
+		end;
+		
+		
         
 		// Add stimulus here
 
